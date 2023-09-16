@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
@@ -104,8 +104,9 @@ button:hover span {
 
 .pic{
     width: 500px;
-    height: 600px;
-    margin: 30px 20px;
+    height: 450px;
+    margin: 40px 20px;
+    border-radius: 15px;
 }
 
 .hero h1{
@@ -153,6 +154,10 @@ button:hover span {
 .about-col-2 h1{
     font-size: 45px;
     color: #2844cd;
+}
+.about-col-2 p{
+    font-size: 18px;
+    padding-right: 15px;
 }
 
 .tab-titles{
@@ -202,6 +207,81 @@ button:hover span {
     display: block;
 }
 
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#title{
+  text-align: center;
+}
+
+#title h1{
+    font-size: 40px;
+    text-decoration: underline #2844cd;
+}
+
+.project-img{
+    transition:box-shadow;
+    transition: ease-in-out 0.5s;
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    border-radius:10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(34, 49, 86);
+    padding-top: 140px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.project-img:hover{
+    box-shadow: 10px 10px 10px rgb(31, 82, 209);
+    font-size: 50px;
+}
+
+#img1{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#img2{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#img3{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img3.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.redirect{
+    margin-top: 80px;
+}
+
+.description{
+    display: flex;
+    padding: 0 20px ;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.description1{
+    width: 400px;
+    height: 200px;
+    margin: 0 50px;
+    border-radius:10px;
+    box-shadow: 10px 10px 10px rgb(34, 49, 86);
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
 
 
 
