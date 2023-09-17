@@ -7,6 +7,7 @@
     <title>Sanyam Jindal - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -15,20 +16,22 @@
             <nav>
                 <img src="logo_.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#HOME">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#TITLE">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="hero">
+        <div class="hero" id="HOME">
             <div>
                 <p>Hello, It's Me</p>
                 <h1>Sanyam Jindal</h1>
                 <h3 class="blue">A Frontend Developer</h3>
+                <a href="#contact">
                 <button><span class="crsr"></span>Contact</button>
+             </a>
                 <a href="Sanyam's Resume.pdf" download="Resume">
                     <button><span class="crsr"></span>Resume</button>
                 </a>
@@ -98,7 +101,7 @@
     </div>
 
 
-    <div id="title">
+    <div class="title" id="TITLE">
         <h1>
             Project Work
         </h1>
@@ -117,7 +120,9 @@
             AYTO-One
             <br>stop solution
             <br>
+            <a href="https://github.com/sanyamjindal/AYTO.github.io.git" target="_blank">
             <img src="redirect.png" class="redirect">
+        </a>
         </div>
         <div class="project-img" id="img3">
             Homepage of Netflix
@@ -152,6 +157,43 @@
         </div>
     </div>
 
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">
+                        Contact Me
+                    </h1>
+                    <p><ion-icon name="mail"></ion-icon>sanyamjindal105@gmail.com</p>
+                    <p> <ion-icon name="call"></ion-icon>92103-XXXXX</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sanyam-jindal-38a6ba234?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG45SOqv5RAey9DSeyTRrcw%3D%3D" target="_blank" class="social">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+
+                        <a href="" class="social">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+
+                        <a href="" class="social">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" id="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -170,6 +212,6 @@
         }
 
     </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
-
 </html>
